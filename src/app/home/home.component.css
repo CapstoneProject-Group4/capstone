@@ -1,0 +1,129 @@
+
+  .camera-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60vh;
+    width: 160vh; /* Prenez toute la largeur */
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    overflow: hidden; /* Assurez-vous que les éléments ne dépassent pas */
+  }
+  
+  .camera-status {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    color: limegreen;
+  }
+  
+  .camera-display {
+    position: relative;
+    width: 90%; /* Ajustement pour une meilleure apparence */
+    height: 70%;
+  }
+  
+  .camera-feed {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .camera-coordinates {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: limegreen;
+    font-size: 12px;
+  }
+  
+  .camera-controls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .record-btn, .capture-btn {
+    background-color: #444;
+    border: 2px solid #666;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .record-btn:hover, .capture-btn:hover {
+    background-color: #666;
+    transform: scale(1.05);
+  }
+  
+  /* Robot controller section */
+  .robot-controller {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .controller-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #switch {
+    margin-left: 10px;
+    bottom: 15px; /* Positionné en bas à gauche de la caméra */
+    left: 15px;
+  }
+  
+  .controller-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .side-controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  /* Boutons de contrôle stylisés */
+  .control-btn {
+    background-color: #444;
+    border: 2px solid #666;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .control-btn:hover {
+    background-color: #666;
+    transform: scale(1.1);
+  }
+  
+  /* Bouton central plus sophistiqué */
+  .center-btn {
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    transition: transform 0.3s;
+  }
+  
+  .center-btn:hover {
+    transform: scale(1.1);
+    background-color: #ddd;
+  }

@@ -1,0 +1,107 @@
+.container {
+    width: 100vw;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    background-color: #1E1E1E; /* Couleur de fond */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    display: flex;
+    margin: 0;
+    text-align:center;
+}
+
+
+/* frame de connection*/
+.displayTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: #1E1E1E; /* Couleur de fond du carré */
+    
+}
+
+/* Centrage du contenu texte dans le carré */
+.displayTableCell {
+    text-align: center;
+    width: 100%;
+}
+
+/* AuthBlock */
+.authBlock {
+    background-color: #2A2A2A; /* Fond gris plus clair que le fond de la page */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Autres styles inchangés */
+h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formControl {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #333; /* Fond des champs de texte plus sombre */
+    color: white; /* Texte en blanc */
+}
+
+.formControl:focus {
+    border-color: #007bff;
+}
+
+/* Bouton de connexion */
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-outline-primary {
+    border: 1px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.forgotPassword {
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Texte pour redirection vers inscription */
+.redirectToLogin {
+    margin-top: 20px;
+    color: #666;
+}
+
+.redirect {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.orInner {
+    color: #666;
+}

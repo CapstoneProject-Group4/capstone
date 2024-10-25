@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #1E1E1E;
+    padding: 10px 20px;
+}
+
+/* Navbar brand (logo) */
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.navbar-text {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  
+
+.btn-signout {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
