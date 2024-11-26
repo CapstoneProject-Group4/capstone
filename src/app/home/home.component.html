@@ -1,20 +1,21 @@
 <div class="camera-view">
     <div class="camera-status">
-      <span class="status-info">CPU: 15%  RAM: 16%</span>
-      <span class="status-info">FPS: 30  TEMP: 25.5°C</span>
+      <!-- Needs to be coded on backend -->
+      <span class="status-info" id="cpu-usage">CPU: Loading...</span> 
+      <span class="status-info" id="battery-status">Battery: Loading...</span>
+      <span class="status-info" id="fps-status">FPS: Loading...</span>
     </div>
     <div class="camera-display">
-      <!-- Ici, insère la vidéo en direct de la caméra -->
-      <img src="assets/sample-camera.jpg" alt="Camera View" class="camera-feed">
-      <div class="camera-coordinates">
-        <span>41°24'12.2"N 2°10'26.5"E</span>
-      </div>
+      <video class="camera-feed" controls autoplay>
+        <source src="rtsp://172.20.10.3:8554/live" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
     <div class="camera-controls">
       <button class="record-btn">Recording</button>
       <button class="capture-btn">📷</button>
     </div>
-  </div>
+</div>
   
   <div class="robot-controller">
     <div class="controller-header">
